@@ -38,6 +38,13 @@ public:
     {
         return blue;
     }
+
+    void print()
+    {
+        cout << "Red: " << red
+             << ", Green: " << green
+             << ", Blue: " << blue << endl;
+    }
 };
 
 int main()
@@ -48,9 +55,8 @@ int main()
     color1.setGreen(100);
     color1.setBlue(50);
 
-    cout << color1.getRed() << endl;
-    cout << color1.getGreen() << endl;
-    cout << color1.getBlue() << endl;
+    cout << "Color 1" << endl;
+    color1.print();
 
     return 0;
 }
